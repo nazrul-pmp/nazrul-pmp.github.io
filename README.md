@@ -1,5 +1,26 @@
-# Mohammed Nazrul Islam — Portfolio Website V2
+# Mohammed Nazrul Islam — Portfolio Website V4
 
-Velora-inspired visual prototype based on the current website content draft.
+This version populates the Certifications and Professional Training sections with the certificate evidence supplied in the conversation.
 
-This is a review build, not the final approved public version. Review the wording, project groupings, metrics, case-study confidentiality, photo, public email and CV before final publication.
+## Professional certifications featured (5)
+1. PMP® — Project Management Institute
+2. Project DPro Foundation — PM4NGOs
+3. MEAL DPro — PM4NGOs
+4. Fire Safety Manager Course — Bangladesh Fire Service & Civil Defence Directorate
+5. Industrial Fire Safety Management — iART / BKMEA
+
+## Training certificate gallery
+- Results-Based Management — Basic & Advanced
+- PgMD Pro
+- Project DPro course completion
+- MEAL DPro course completion
+- Response Monitoring Framework and Tools
+- Gender-Based Violence — Levels 1 & 2
+- ISO 45001:2018 OH&S Internal Auditor
+- Fire Fighting, Fire Prevention, Rescue & First Aid
+- TOT on IYCF and Maternal Nutrition
+
+Certificate images are clickable and open in a lightbox.
+
+## Important review point
+There are date inconsistencies between some certificate evidence and older CV/repository records. The website uses conservative year-level labels for most entries. Correct the source records before final publication where necessary.
