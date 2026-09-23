@@ -293,3 +293,132 @@ button.certificate-frame{cursor:zoom-in;width:100%;font:inherit;color:inherit;te
     grid-template-columns:100px 1fr !important;
   }
 }
+
+
+/* V6 — clean profile photo: no text overlay */
+.hero-visual{
+  position:relative !important;
+  min-height:0 !important;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:18px;
+}
+
+.portrait-card.clean-portrait{
+  position:relative !important;
+  inset:auto !important;
+  width:min(100%, 420px) !important;
+  height:auto !important;
+  aspect-ratio:4 / 5;
+  border-radius:34px !important;
+  overflow:hidden;
+  box-shadow:0 22px 48px rgba(35,28,20,.12);
+  background:#ddd3c5;
+}
+
+.portrait-card.clean-portrait .profile-photo{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:50% 34% !important;
+  display:block;
+}
+
+.profile-below-photo{
+  width:min(100%, 420px);
+  display:grid;
+  gap:12px;
+}
+
+.portrait-caption-below{
+  position:static !important;
+  background:transparent !important;
+  padding:0 2px !important;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  text-align:center;
+}
+
+.portrait-caption-below strong{
+  font-size:1.06rem;
+  font-weight:850;
+  color:var(--ink);
+}
+
+.portrait-caption-below span{
+  font-size:.82rem;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.profile-highlights{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.profile-highlight{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:13px 14px;
+  text-align:left;
+  box-shadow:0 8px 18px rgba(35,28,20,.05);
+}
+
+.profile-highlight strong{
+  display:block;
+  font-size:.9rem;
+  font-weight:850;
+  color:var(--ink);
+  margin-bottom:2px;
+}
+
+.profile-highlight span{
+  display:block;
+  font-size:.75rem;
+  color:var(--muted);
+}
+
+/* Disable the old overlay elements if any remain from cached markup */
+.hero-visual .portrait-caption,
+.hero-visual .floating-note{
+  display:none !important;
+}
+
+@media(max-width:760px){
+  .portrait-card.clean-portrait,
+  .profile-below-photo{
+    width:min(100%, 390px) !important;
+  }
+
+  .profile-highlights{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* V6.1 — raise hero profile block slightly on desktop */
+@media(min-width:981px){
+  .hero-grid{
+    align-items:center;
+  }
+
+  .hero-visual{
+    margin-top:-72px;
+  }
+}
+
+@media(min-width:761px) and (max-width:980px){
+  .hero-visual{
+    margin-top:-34px;
+  }
+}
+
+@media(max-width:760px){
+  .hero-visual{
+    margin-top:0;
+  }
+}

@@ -31,3 +31,11 @@ Certification and training entries now use a compact card layout:
 - certificate image on the right,
 - certificate width limited to approximately 460 px on desktop,
 - mobile stacking only below 640 px.
+
+## V6 profile layout correction
+The hero portrait now contains only the profile photo.
+Name, professional focus, experience highlight and WASH highlight are placed below the image.
+No text or statistic card overlaps the photo.
+
+## V6.1 hero alignment
+The complete profile block has been moved slightly upward on desktop/tablet so the portrait aligns better with the hero headline. Mobile spacing remains unchanged.
