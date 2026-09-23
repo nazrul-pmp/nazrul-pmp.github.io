@@ -39,3 +39,11 @@ No text or statistic card overlaps the photo.
 
 ## V6.1 hero alignment
 The complete profile block has been moved slightly upward on desktop/tablet so the portrait aligns better with the hero headline. Mobile spacing remains unchanged.
+
+## V7 hero redesign
+The oversized headline has been removed from the first screen.
+The hero now shows:
+- Mohammed Nazrul Islam at 25 px,
+- professional focus directly below,
+- profile photo beside the text on desktop,
+- both text and photo visible immediately on first load.

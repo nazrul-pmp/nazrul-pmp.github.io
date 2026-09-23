@@ -422,3 +422,127 @@ button.certificate-frame{cursor:zoom-in;width:100%;font:inherit;color:inherit;te
     margin-top:0;
   }
 }
+
+
+/* V7 — compact first-screen hero: name + photo visible immediately */
+.hero{
+  padding:42px 0 46px !important;
+}
+
+.hero-grid{
+  display:grid !important;
+  grid-template-columns:minmax(0, 1fr) minmax(340px, 430px) !important;
+  gap:56px !important;
+  align-items:center !important;
+  min-height:calc(100vh - 78px);
+}
+
+.compact-hero-copy{
+  align-self:center;
+  max-width:680px;
+}
+
+.compact-hero-copy .kicker{
+  margin-bottom:14px;
+}
+
+.compact-hero-copy h1{
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size:25px !important;
+  line-height:1.15 !important;
+  letter-spacing:0 !important;
+  font-weight:850 !important;
+  margin:0 0 10px !important;
+  max-width:none !important;
+}
+
+.hero-role{
+  margin:0 0 18px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(1.45rem,2.5vw,2.25rem);
+  line-height:1.18;
+  color:var(--ink);
+  max-width:640px;
+}
+
+.compact-hero-copy .hero-lead{
+  font-size:1.02rem !important;
+  max-width:620px !important;
+  margin:0;
+}
+
+.compact-hero-copy .hero-actions{
+  margin-top:22px !important;
+}
+
+.compact-hero-copy .hero-meta{
+  margin-top:24px !important;
+  padding-top:18px !important;
+}
+
+.compact-hero-visual{
+  margin-top:0 !important;
+  align-self:center !important;
+  justify-self:end;
+  width:100%;
+}
+
+.compact-hero-visual .portrait-card.clean-portrait{
+  width:min(100%, 390px) !important;
+  height:auto !important;
+  aspect-ratio:4 / 5 !important;
+  margin:0 auto;
+}
+
+.compact-hero-visual .profile-below-photo{
+  width:min(100%, 390px) !important;
+  margin:0 auto;
+}
+
+/* Prevent earlier hero offset rules from moving the image down/up unexpectedly */
+@media(min-width:981px){
+  .hero-visual,
+  .compact-hero-visual{
+    margin-top:0 !important;
+  }
+}
+
+@media(min-width:761px) and (max-width:980px){
+  .hero{
+    padding:36px 0 42px !important;
+  }
+
+  .hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(300px,360px) !important;
+    gap:34px !important;
+    min-height:auto;
+  }
+
+  .compact-hero-visual{
+    margin-top:0 !important;
+  }
+}
+
+@media(max-width:760px){
+  .hero{
+    padding:34px 0 42px !important;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+    min-height:auto;
+  }
+
+  .compact-hero-visual{
+    justify-self:center;
+  }
+
+  .compact-hero-copy h1{
+    font-size:25px !important;
+  }
+
+  .hero-role{
+    font-size:1.55rem;
+  }
+}
