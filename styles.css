@@ -148,3 +148,148 @@ button.certificate-frame{cursor:zoom-in;width:100%;font:inherit;color:inherit;te
 @media(max-width:820px){
   .certificate-stack{grid-template-columns:1fr}
 }
+
+
+/* V5 — compact side-by-side certificate layout */
+.credentials-showcase .section-head{
+  margin-bottom:28px;
+  max-width:820px;
+}
+
+.document-list{
+  border-top:0;
+  display:grid;
+  gap:22px;
+}
+
+.document-row{
+  display:grid !important;
+  grid-template-columns:minmax(0, 42%) minmax(0, 58%) !important;
+  gap:34px !important;
+  align-items:center !important;
+  padding:26px 28px !important;
+  border:1px solid var(--line) !important;
+  border-radius:20px;
+  background:var(--paper);
+}
+
+.document-copy{
+  align-self:center;
+}
+
+.document-number{
+  margin-bottom:10px;
+  font-size:.68rem;
+}
+
+.document-copy h3{
+  margin:0 0 16px !important;
+  font-size:clamp(1.35rem,2vw,2rem) !important;
+  line-height:1.14 !important;
+}
+
+.document-meta{
+  gap:6px !important;
+}
+
+.document-meta div{
+  grid-template-columns:112px 1fr !important;
+  gap:10px !important;
+}
+
+.document-meta dt{
+  font-size:.68rem !important;
+}
+
+.document-meta dd{
+  font-size:.86rem;
+  font-weight:600;
+}
+
+.certificate-frame{
+  width:100%;
+  max-width:460px;
+  min-height:0 !important;
+  justify-self:end;
+  border-radius:10px !important;
+  box-shadow:none !important;
+  background:#fff;
+  border:1px solid #d8d8d8 !important;
+}
+
+.certificate-frame img{
+  width:100% !important;
+  height:auto !important;
+  max-height:300px;
+  object-fit:contain;
+  background:#fff;
+}
+
+.certificate-frame.has-image > span{
+  right:8px;
+  bottom:8px;
+  font-size:.62rem;
+  padding:5px 8px;
+}
+
+.certificate-stack{
+  width:100%;
+  max-width:460px;
+  justify-self:end;
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:10px !important;
+}
+
+.compact-certificate{
+  max-width:none !important;
+}
+
+.compact-certificate img{
+  max-height:220px !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+}
+
+/* Keep desktop side-by-side until genuinely small screens */
+@media(max-width:640px){
+  .document-row{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+    padding:22px 18px !important;
+  }
+
+  .certificate-frame,
+  .certificate-stack{
+    justify-self:stretch;
+    max-width:100%;
+  }
+
+  .certificate-frame img{
+    max-height:260px;
+  }
+
+  .document-meta div{
+    grid-template-columns:96px 1fr !important;
+  }
+
+  .certificate-stack{
+    grid-template-columns:1fr !important;
+  }
+}
+
+/* Neutralize earlier 820px stacking rule specifically for this section */
+@media(min-width:641px) and (max-width:820px){
+  .document-row{
+    grid-template-columns:minmax(0, 42%) minmax(0, 58%) !important;
+    gap:24px !important;
+  }
+
+  .certificate-frame{
+    max-width:390px;
+  }
+
+  .document-meta div{
+    grid-template-columns:100px 1fr !important;
+  }
+}

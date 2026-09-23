@@ -24,3 +24,10 @@ Certificate images are clickable and open in a lightbox.
 
 ## Important review point
 There are date inconsistencies between some certificate evidence and older CV/repository records. The website uses conservative year-level labels for most entries. Correct the source records before final publication where necessary.
+
+## V5 layout correction
+Certification and training entries now use a compact card layout:
+- description on the left,
+- certificate image on the right,
+- certificate width limited to approximately 460 px on desktop,
+- mobile stacking only below 640 px.
